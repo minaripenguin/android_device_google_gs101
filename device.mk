@@ -1135,3 +1135,6 @@ PRODUCT_VENDOR_PROPERTIES += ro.crypto.metadata_init_delete_all_keys.enabled=tru
 
 # Hardware Info Collection
 include hardware/google/pixel/HardwareInfo/HardwareInfo.mk
+
+# Memory
+PRODUCT_PRODUCT_PROPERTIES += persist.device_config.mglru_native.lru_gen_config=all
