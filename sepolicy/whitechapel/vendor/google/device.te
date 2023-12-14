@@ -4,6 +4,7 @@ type modem_block_device, dev_type;
 type modem_userdata_block_device, dev_type;
 type persist_block_device, dev_type;
 type mfg_data_block_device, dev_type;
+type gxp_device, dev_type, mlstrustedobject;
 
 # Exynos devices
 type vendor_toe_device, dev_type;
