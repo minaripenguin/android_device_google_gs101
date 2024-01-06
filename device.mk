@@ -1145,3 +1145,17 @@ PRODUCT_PRODUCT_PROPERTIES += persist.sys.modem.removeable_esim_as_default=true
 # Camera
 persist.vendor.camera.privapp.list=org.lineageos.aperture.org.codeaurora.snapcam,com.android.camera,com.google.android.GoogleCamera
 vendor.camera.aux.packagelist=org.lineageos.aperture,org.codeaurora.snapcam,com.android.camera,com.google.android.GoogleCamera
+
+# LMKD
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.use_new_strategy=true
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.enable_watermark_check=true
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.kill_heaviest_task=true
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.enable_userspace_lmk=true
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.enhance_batch_kill=false
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.super_critical=701
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.filecache_min_kb=153600
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.kill_timeout_ms=50
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.stall_limit_critical=40
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.psi_scrit_complete_stall_ms=150
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.direct_reclaim_pressure=45
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.lmk.reclaim_scan_threshold=0
